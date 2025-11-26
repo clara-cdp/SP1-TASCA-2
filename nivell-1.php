@@ -15,7 +15,7 @@ $bools = true;
 var_dump($bools);
 echo "<br>";
 define("NOM", "Clara CDP");
-echo "<h1>"NOM"</h1>";
+
 
 /******* EXERCICI 2 *******/
 
