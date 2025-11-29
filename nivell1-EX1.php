@@ -1,6 +1,6 @@
 <?php
 
-/******  EXCERCICI 1  ******/
+echo "<h3> * * * Exercici 1 * * * </h3>";
 
 $num = 8;
 var_dump($num);
@@ -14,11 +14,5 @@ echo "<br>";
 $bools = true;
 var_dump($bools);
 echo "<br>";
-define("NOM", "Clara CDP");
-
-
-/******* EXERCICI 2 *******/
-
-echo $phrase;
-
-echo "here we go again!";
+define("NOM", "Clara Cerdà de Palou");
+echo "<h1>" . NOM . "</h1>";
