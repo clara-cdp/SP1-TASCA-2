@@ -27,7 +27,6 @@ function classified($num1, $num2, $num3)
 {
     $averageScore = average($num1, $num2, $num3);
 
-
     if ($averageScore < 4000) {
         return "Principiant";
     } elseif ($averageScore <= 8000 &&  $averageScore >= 4000) {
@@ -37,6 +36,5 @@ function classified($num1, $num2, $num3)
 }
 
 $classified = classified($score1, $score2, $score3);
-
 
 echo "El concusant Gismo amb notes $score1, $score2, $score3 és: $classified;";
