@@ -12,20 +12,20 @@ $score1 = rand(0, 9999);
 $score2 = rand(0, 9999);
 $score3 = rand(0, 9999);
 
-function sum($num1, $num2, $num3)
+function sum(int $num1, int $num2, int $num3)
 {
     return $num1 + $num2 + $num3;
 }
 
-function average($num1, $num2, $num3)
+function calcAverage(int $num1, int $num2, int $num3)
 {
     $sum = sum($num1, $num2, $num3);
     return $sum / 3;
 }
 
-function classified($num1, $num2, $num3)
+function checkClassification(int $num1, int $num2, int $num3)
 {
-    $averageScore = average($num1, $num2, $num3);
+    $averageScore = calcAverage($num1, $num2, $num3);
 
     if ($averageScore < 4000) {
         return "Principiant";
@@ -35,6 +35,6 @@ function classified($num1, $num2, $num3)
         return "Professional";
 }
 
-$classified = classified($score1, $score2, $score3);
+$classified = checkClassification($score1, $score2, $score3);
 
-echo "El concusant Gismo amb notes $score1, $score2, $score3 és: $classified;";
+echo "El concursant Gizmo amb notes $score1, $score2, $score3 és: $classified";

@@ -43,19 +43,15 @@ $mod2 = $n % $m;
 echo "<br>El mòdul de dividir les dues variables és: $mod2<br>\n";
 //per a totes les variables
 # El doble de cada variable.
-function calcDoble($num)
-{
-    echo "El doble $num és:" . $num * 2 . "<br>\n";
-}
 
-echo "<br>\n";
-calcDoble($x);
-calcDoble($y);
-calcDoble($n);
-calcDoble($m);
+echo "<br> El doble de $x és: " . $x * 2;
+echo "\n<br> El doble de $y és: " . $y * 2;
+echo "\n<br> El doble de $n és: " . $n * 2;
+echo "\n<br> El doble de $m és: " . $m * 2;
+
 
 #La suma de totes les variables.
-echo "<br>La suma de totes les variables: " . $x + $y + $n + $m . "<br>\n";
+echo "\n<br>La suma de totes les variables: " . $x + $y + $n + $m . "<br>\n";
 
 #El producte de totes les variables.
 echo "<br>El producte de totes les variables: " . $x * $y * $n * $m . "<br>\n";
@@ -65,7 +61,7 @@ echo "<br> ** B: ** <br>";
 /* Crea un programa que tingui una funció que rebi dos nombres per paràmetre, 
 i en un tercer paràmetre que indiqui una operació aritmética(suma,resta,multiplicació o divisió dels dos nombres).*/
 
-function calcNumbers($num1, $num2, $operator)
+function calcNumbers(float $num1, float $num2, string $operator)
 {
     switch ($operator) {
         case '+':
