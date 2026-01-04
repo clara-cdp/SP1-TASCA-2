@@ -1,5 +1,5 @@
 <?php
-echo "<h3> * * * Exercici 5 * * * <br></h3>\n";
+echo "* * * Exercici 5 * * * \n";
 /* Escriure una funció per verificar el grau d'un/a estudiant d'acord amb la nota.
 Si la nota és 60% o més, el grau hauria de ser Primera Divisió.
 Si la nota està entre 45% i 59%, el grau hauria de ser Segona Divisió.
@@ -13,10 +13,10 @@ function calcGrade(int $grade)
         case ($grade >= 60):
             echo "Primera Divisió";
             break;
-        case ($grade >= 45 && $grade <= 59):
+        case ($grade >= 45):
             echo "Segona Divisió";
             break;
-        case ($grade >= 33 && $grade <= 44):
+        case ($grade >= 33):
             echo "Tercera Divisió";
             break;
         default:

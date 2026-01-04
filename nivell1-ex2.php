@@ -1,12 +1,17 @@
 <?php
-echo "<h3> * * * Exercici 2 * * * </h3>";
+echo "* * * Exercici 2 * * *\n";
 
-$myString = "Hello World! ";
+$myString = "Hello World!";
+
+echo $myString;
+
 echo strtoupper($myString);
 
 $myStringLength = strlen($myString);
-echo "<br> The number of characters is: " . $myStringLength;
+echo "\nThe number of characters is: " . $myStringLength;
 
-echo "<br>" . $myString . " a l'invers és: " . strrev($myString);
+echo "\n" . $myString . " a l'invers és: " . strrev($myString);
+
 $newString = "Aquest és el curs de PHP";
-echo "<br>" . $myString . $newString;
+
+echo "\n" . $myString . " " . $newString;

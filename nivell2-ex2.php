@@ -1,5 +1,5 @@
 <?php
-echo "<h3> * * *NIVELL 2 Exercici 1 * * * <br></h3>\n";
+echo "* * *NIVELL 2 Exercici 1 * * *\n";
 /* Imagina que estàs programant part de la lògica de la classificació de punts d'un joc. 
 En aquest programa necessitem entrar 3 puntuacions diferents(les puntuacions són entre 0 i 9999). D'aquestes puntuacions necessitarem:
 
@@ -29,7 +29,7 @@ function checkClassification(int $num1, int $num2, int $num3)
 
     if ($averageScore < 4000) {
         return "Principiant";
-    } elseif ($averageScore <= 8000 &&  $averageScore >= 4000) {
+    } elseif ($averageScore <= 8000) {
         return "Intermedi";
     } else
         return "Professional";

@@ -1,6 +1,6 @@
 <?php
 
-echo "<h3> * * * Exercici 3 * * * </h3>  ** A: ** <br>\n";
+echo " * * * Exercici 3 * * * \n  ** A: ** \n";
 /*Declara dues variables X i Y de tipus int, dues variables N i M de tipus double i assigna a cadascuna un valor.
 mostra per pantalla per a X i Y.  */
 
@@ -8,56 +8,57 @@ $x = 6;
 $y = 8;
 
 #El valor de cada variable.
-print "El valor de cada variable 'x' és: $x\n";
-print "<br> El valor de cada variable 'y' és: $y\n";
+print "El valor de cada variable 'x' és: $x";
+print "\nEl valor de cada variable 'y' és: $y\n";
 
 #La suma.
 $sum = $x + $y;
-echo "<br>La suma de les dues variables és: $sum\n";
+echo "\nLa suma de les dues variables és: $sum";
 
 #La resta
 $sub = $x - $y;
-echo "<br>La resta de les dues variables és: $sub\n";
+echo "\nLa resta de les dues variables és: $sub";
 
 #El producte
 $product = $x * $y;
-echo "<br>El producte de multiplicar les dues variables és: $product\n";
+echo "\nEl producte de multiplicar les dues variables és: $product";
 
 #El mòdul
 $mod = $x / $y;
-echo "<br>El mòdul de dividir les dues variables és: $mod<br>\n";
+echo "\nEl mòdul de dividir les dues variables és: $mod\n";
 
 //Per N i M realitzaràs el mateix.
 $n = 5.5;
 $m = 3.6;
 
-echo "<br>El valor de cada variable 'n' és: $n\n";
-echo "<br> El valor de cada variable 'm' és: $m\n";
+echo "\nEl valor de cada variable 'n' és: $n";
+echo "\nEl valor de cada variable 'm' és: $m\n";
 $sum2 = $n + $m;
-echo "<br>La suma de les dues variables és: $sum2\n";
+echo "\nLa suma de les dues variables és: $sum2";
 $sub2 = $n - $m;
-echo "<br>La resta de les dues variables és: $sub2\n";
+echo "\nLa resta de les dues variables és: $sub2";
 $product2 = $n * $m;
-echo "<br>El producte de multiplicar les dues variables és: $product2\n";
+echo "\nEl producte de multiplicar les dues variables és: $product2";
 $mod2 = $n % $m;
-echo "<br>El mòdul de dividir les dues variables és: $mod2<br>\n";
+echo "\nEl mòdul de dividir les dues variables és: $mod2\n";
+
 //per a totes les variables
 # El doble de cada variable.
 
-echo "<br> El doble de $x és: " . $x * 2;
-echo "\n<br> El doble de $y és: " . $y * 2;
-echo "\n<br> El doble de $n és: " . $n * 2;
-echo "\n<br> El doble de $m és: " . $m * 2;
-
+echo "\nEl doble de $x és: " . $x * 2;
+echo "\nEl doble de $y és: " . $y * 2;
+echo "\nEl doble de $n és: " . $n * 2;
+echo "\nEl doble de $m és: " . $m * 2;
 
 #La suma de totes les variables.
-echo "\n<br>La suma de totes les variables: " . $x + $y + $n + $m . "<br>\n";
+echo "\n\n* La suma de totes les variables: " . $x + $y + $n + $m . "\n";
 
 #El producte de totes les variables.
-echo "<br>El producte de totes les variables: " . $x * $y * $n * $m . "<br>\n";
+echo "\n* El producte de totes les variables: " . $x * $y * $n * $m . "\n";
 
 
-echo "<br> ** B: ** <br>";
+echo "\n* * * B \n";
+
 /* Crea un programa que tingui una funció que rebi dos nombres per paràmetre, 
 i en un tercer paràmetre que indiqui una operació aritmética(suma,resta,multiplicació o divisió dels dos nombres).*/
 
@@ -83,5 +84,5 @@ function calcNumbers(float $num1, float $num2, string $operator)
 
 
 calcNumbers($x, $y, '+');
-echo "<br>\n";
+echo "\n";
 calcNumbers($n, $m, '*');

@@ -1,20 +1,22 @@
 <?php
-echo "<h3> * * *NIVELL 2 Exercici 1 * * * <br></h3>\n";
+echo " * * *NIVELL 2 Exercici 1 * * *\n";
 /*Escriu una funció que determini la quantitat total a pagar per una trucada telefònica segons les següents premisses:
 Tota trucada que duri menys de 3 minuts té un cost de 10 cèntims.
 Cada minut addicional a partir dels 3 primers és un pas de comptador i costa 5 cèntims.*/
 
+const FIRST_3_MINUTES = 3;
+const COST_PER_MINUTE = 5;
+const BASIC_RATE = 10;
+
 function calcCallCost(int $minutes)
 {
-    $firstMinutes = 3;
-    $costPerMinut = 5;
-    $basicRate = 10;
+
 
     $cost = 0;
-    if ($minutes <= $firstMinutes) {
-        $cost =  $basicRate;
+    if ($minutes <= FIRST_3_MINUTES) {
+        $cost =  BASIC_RATE;
     } else {
-        $cost =  $basicRate + (($minutes - $firstMinutes) * $costPerMinut);
+        $cost =  BASIC_RATE + (($minutes - FIRST_3_MINUTES) * COST_PER_MINUTE);
     }
     return (int) $cost;
 }
